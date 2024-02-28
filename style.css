@@ -1,0 +1,322 @@
+
+body {
+    margin: 0; /* Remove default margin */
+    min-height: 200vw; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Keep footer at bottom */
+    font-family: helvetica, sans-serif;
+    
+  }
+  
+  #about {    flex: 1; /* Fill remaining space */
+    padding-top: 35px;
+    padding-bottom: 200px;
+    background-image: url("ccs_1.png");
+    box-shadow: inset 0 0 100px #000;
+    
+  }
+  
+  header {
+    background: rgb(234,209,150);
+background: linear-gradient(90deg, rgba(234,209,150,1) 0%, rgba(191,49,49,1) 35%, rgba(125,10,10,1) 100%);
+    color: #E3E36A;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav{
+    padding: 1px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    float: right;
+  }
+
+  nav img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-img {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 64px;
+    height: 64px;
+  }
+
+
+  nav ul li {
+    display: inline-block; /* Ensure elements side-by-side */
+    margin: 0 1px; /* Add spacing between elements */
+    padding: 10px 20px; /* Add padding for hover effect */
+  }
+  
+  nav ul li:hover {
+    background-color: #E36414;
+    border-radius: 5px; 
+  }
+  
+  nav ul li:not(:last-child) { 
+    border-right: 1px solid #ddd; 
+  }
+  
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1{
+    font-size: 64px;
+    margin-bottom: 10px;
+    color: #e76e0c;
+  }
+  
+  p {
+    font-size: 24px;
+    color: #ddd;
+  }
+
+  #themeMain{
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  #themeTyped{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 58px;
+    color: #ddd;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background: rgb(234,209,150);
+background: linear-gradient(190deg, rgba(234,209,150,1) 0%, rgba(191,49,49,1) 35%, rgba(125,10,10,1) 100%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+    
+  section {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0, 0, 1);
+    margin: 20px;
+  }
+  
+  a {
+    font-weight: bold;
+  }
+  
+  hr{
+      height: 1px;
+      width: 95%
+  }
+  
+  footer {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 2%;
+  }
+  
+  .about-wrapper , .about-wrapper-2 , .about-wrapper-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  
+.main-theme{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.7) 29%, rgba(121,92,9,0.4) 65%, rgba(255,85,0,0.15) 100%);
+    padding: 2%;
+    width: 95%;
+    position: absolute;
+}
+
+#about-2 {
+    flex: 1; /* Fill remaining space */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: url("ccs_2.png");
+    box-shadow: inset 0 0 100px #000;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+
+  #about-3 {
+    flex: 2; /* Fill remaining space */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: url("ccs_3.png");
+    box-shadow: inset 0 0 100px #000;
+    background-repeat: no-repeat;
+    background-size: 140%;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+  #contact{
+    text-align: center;
+    align-items: center;
+    background-image: url("ccs_4.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 700px;
+  }
+  
+  .contact-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .brc{
+    color: #fff;
+    margin-bottom: 3%;
+  }
+  
+  .contact-info li a img {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+  }
+  
+  .contact-box {
+    max-width: 800px; /* Set a maximum width for responsiveness */
+    margin: 2% auto; /* Center the box horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); 
+    background: rgba(2,0,36,0.5);
+    border-radius: 1%;
+  }
+  
+  .contact-info,
+  .feedback-form {
+    margin-bottom: 20px; /* Add space between sections */
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 10px; /* Add space below heading */
+  }
+  
+  .feedback-form label {
+    display: block; /* Make labels on separate lines */
+    margin-bottom: 5px; /* Add space below labels */
+  }
+
+  
+  .contact-box h2,
+  .contact-box p {
+    color: #fff; /* Contrasting color for text */
+  }
+  
+  .contact-info h3,
+  .contact-info ul li a {
+    color: #fff; /* Adjust for contact details */
+  }
+
+  .contact{
+    align-items: center;
+  }
+
+  .socmed {
+    white-space: nowrap;
+  }
+  
+  .socmed li {
+    list-style: none;
+    display: inline;
+  }
+
+  .socmed li img{
+    height: 32px;
+    width: 32px;
+  }

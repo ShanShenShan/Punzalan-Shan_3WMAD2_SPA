@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - About Me</title>
+  <link rel="icon" href="pfp.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+        <div class="nav-img">
+            <img src="logo.png">
+        </div>
+    </nav>
+  </header>
+
+  <main id="about">
+    <div class="about-wrapper">
+        <div class="main-theme">
+      <h1>LSPU College of Computer Studies</h1>
+      <p id="themeTyped"></p><br>
+        </div>
+      </div>
+  </main>
+
+
+  <footer>
+    <p>&copy; Shan</p>
+  </footer>
+
+  <script>
+      const typedText = document.getElementById("themeTyped");
+      const text = "Your future starts here!";
+      let index = 0;
+
+      function typeWriter() {
+        if (index < text.length) {
+          typedText.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 100);
+        }
+      }
+
+      typeWriter();
+
+     
+
+    const newSectionLink = document.getElementById("mission");
+
+    newSectionLink.addEventListener("click", function() {
+    document.getElementById("mission").scrollIntoView({
+        behavior: "smooth"
+    });
+    });
+
+  </script>
+</body>
+</html>

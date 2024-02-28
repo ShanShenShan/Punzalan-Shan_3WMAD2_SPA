@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Computer Studies</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-div">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about-2">Mission</a></li>
+            <li><a href="/contact" onclick="route()">Contact</a></li>
+          </ul>
+          <div class="nav-img">
+            <img src="logo.png">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="about">
+      <div class="about-wrapper">
+        <div class="main-theme">
+          <h1 id="themeMain">LSPU College of Computer Studies</h1>
+          <p id="themeTyped"></p>
+        </div>
+      </div>
+    </main>
+
+    <main id="about-2">
+      <div class="about-wrapper-2">
+        <div class="main-theme">
+          <h1>Welcome to CCS!</h1>
+          <p>We are dedicated to providing a stimulating and challenging
+            learning environment
+            for students interested in pursuing careers in the ever-evolving
+            field of computer science and technology.</p><br>
+        </div>
+          
+        </div>
+      </div>
+    </main>
+  
+    <main id="about-3">
+      <div class="about-wrapper-3">
+        <div class="main-theme">
+          <h1>Mission</h1>
+          <p>LSPU, driven by progressive leadership, is a premier institution
+            providing technology-mediated agriculture, fisheries and other
+            related and emerging disciplines significantly contributing to the
+            growth and development of the region and nation</p><br>
+          <h1>Vision</h1>
+          <p>LSPU is a center of technology innovation that promotes
+            interdisciplinary learning, sustainable utilization of resources,
+            collaboration and partnership with the community and stakeholders
+          </p>
+      </div>
+    </main>
+
+    <main id="contact">
+      <div class="contact-box">
+        <h2>Get in touch</h2>
+        <p>Reach out to our office for admission inqueries!</p>
+    
+        <div class="contact-info">
+          <h3>Contact details</h3><hr class="brc">
+          <ul>
+            <li><a href="mailto:info@lspu.edu.ph">info@lspu.edu.ph</a></li>
+            <li><a href="mailto:nevergonnagiveyouup@lspu.edu.ph">CCS-SPC@lspu.edu.ph</a></li>
+            <li><a href="tel:secret">+63 9123456789</a></li>
+          </ul>
+          <hr class="brc">
+          <ul class="socmed">
+            <li><a href="https://www.facebook.com/CCS.LSPU.SPCC" target="_blank"><img src="fb_icon.png"></a></li>
+            <li><a href="https://lspu.edu.ph/" target="_blank"><img src="lspu.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </main>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">"</button>
+
+    <footer>
+      <p>&copy; Shan</p>
+    </footer>
+
+    <script>
+      const typedText = document.getElementById("themeTyped");
+      const text = "Your future starts here!";
+      let index = 0;
+
+      function typeWriter() {
+        if (index < text.length) {
+          typedText.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 100);
+        }
+      }
+
+      typeWriter();
+
+
+      const themeMain = document.getElementById("themeMain");
+      themeMain.style.opacity = 0;
+
+      window.addEventListener("load", function () {
+
+        let opacity = 0;
+        const intervalId = setInterval(() => {
+          if (opacity >= 1) {
+            clearInterval(intervalId);
+          } else {
+            opacity += 0.3;
+            themeMain.style.opacity = opacity;
+          }
+        }, 250);
+      });
+
+
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+    </script>
+  </body>
+</html>
